@@ -18,6 +18,10 @@ ul li
 {
 	list-style: none;
 }
+ul li a i
+{
+margin: 5px;
+}
 ul li a
 {
 	position: relative;
@@ -41,6 +45,7 @@ ul li:last-child a
 }
 ul li a:before
 {
+	content: "";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -50,7 +55,7 @@ ul li a:before
 	overflow: hidden;
 	z-index: -1;
 	transform: scaleX(0);
-	transform-origin: right;
+	transform-origin: left;
 	transition: transform 0.5s ease-in-out;
 }
 ul li a:hover:before
